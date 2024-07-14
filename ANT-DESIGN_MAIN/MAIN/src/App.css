@@ -1,0 +1,53 @@
+body {
+  background-color: #000; /* Black background color */
+  color: #3becef; /* Green text color */
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items */
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+nav {
+  background-color: #001529; /* Dark blue background color */
+  padding: 15px;
+  animation: pulse 10s infinite; /* Unique pulsating effect */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* White text color */
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #b9ff9f; /* Hover color */
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #001529; /* Initial color */
+  }
+  50% {
+    background-color: #6befc8; /* Green color */
+    transform: scale(1.1); /* Scale effect */
+  }
+  100% {
+    background-color: #001529; /* Back to initial color */
+  }
+}
